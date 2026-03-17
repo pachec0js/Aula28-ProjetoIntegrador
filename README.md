@@ -84,7 +84,7 @@ Abaixo estão os requisitos e regras de negócio mapeados a partir do _Briefing_
 
 Abaixo está o fluxo de trabalho detalhado usando o método Kanban para guiar o desenvolvimento do projeto. Essa estrutura visa maximizar a previsibilidade e organização, sendo o modelo oficial a ser replicado no **Miro**.
 
-#### 📝 To Do (A Fazer - Pendências da Sprint)
+#### To Do (A Fazer - Pendências da Sprint)
 
 - **[Setup]** Configurar branch `feat/processamento` e inicializar o arquivo base `processamento.py`. `(🔴 Alta Prioridade)`
 - **[Core]** Implementar rotinas matemáticas: Cálculo de Média Aritmética e filtro de Recuperação (`média < 7`). `(🔴 Alta Prioridade)`
@@ -94,11 +94,11 @@ Abaixo está o fluxo de trabalho detalhado usando o método Kanban para guiar o 
 - **[QA/Testes]** Executar bateria de testes manuais locais, validando comportamento contra dados corrompidos (strings ou `None`). `(🟡 Média Prioridade)`
 - **[DevOps]** Realizar commit estruturado e Merge Request final para a branch principal `main`. `(🟢 Baixa Prioridade - Final da Sprint)`
 
-#### 🔄 Doing (Em Progresso)
+#### Doing (Em Progresso)
 
 - **[Projeto/Gestão]** Modelagem da infraestrutura ágil no README e transição do quadro para a plataforma visual **Miro**. `(🔥 Em Execução)`
 
-#### ✅ Done (Concluído)
+#### Done (Concluído)
 
 - **[Produto]** Leitura e análise profunda do _briefing_, interpretando as necessidades do SENAI. `(✔️ Concluído)`
 - **[Requisitos]** Documentação e levantamento estruturado de RFs, RNFs e Regras de Negócio. `(✔️ Concluído)`
