@@ -12,7 +12,7 @@ def processar_alunos(alunos):
     alunos_processados = []
     alunos_inconsistentes = []
 
-    for nome in alunos:
+    for nome, notas in alunos:
         if not isinstance(notas, list) or len(notas) == 0:
             alunos_inconsistentes.append(nome)
             continue
