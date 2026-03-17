@@ -7,6 +7,7 @@ def calcular_media(notas):
     media = soma / len(notas)
     return media
 
+
 def processar_alunos(alunos):
     alunos_processados = []
     alunos_inconsistentes = []
@@ -36,7 +37,7 @@ def processar_alunos(alunos):
     return alunos_processados, alunos_inconsistentes
   
   
-  def filtrar_recuperacao(alunos_processados):
+def filtrar_recuperacao(alunos_processados):
     alunos_recuperacao = []
     for aluno in alunos_processados:
         if aluno['media'] < 7:
@@ -44,7 +45,7 @@ def processar_alunos(alunos):
     return alunos_recuperacao
   
 
-  def obter_melhor_aluno(alunos_processados):
+def obter_melhor_aluno(alunos_processados):
     if len(alunos_processados) == 0:
         return None
 
@@ -57,7 +58,7 @@ def processar_alunos(alunos):
     return melhor_aluno
 
   
-  def gerar_relatorio(alunos_processados, alunos_recuperacao, top_student, alunos_inconsistentes):
+def gerar_relatorio(alunos_processados, alunos_recuperacao, top_student, alunos_inconsistentes):
     relatorio = "=== RELATÓRIO FINAL DE DESEMPENHO ACADÊMICO ===\n\n"
 
     relatorio += "ALUNOS PROCESSADOS:\n"
