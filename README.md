@@ -33,23 +33,25 @@ Abaixo estão os requisitos e regras de negócio mapeados a partir do _Briefing_
 
 ## 3. Metodologia (Design Thinking e Gestão Ágil)
 
-> 📌 **Acompanhamento Visual e Dinâmico:** O detalhamento em texto abaixo sobre o Mapa de Empatia e o Kanban serve como um registro estrutural de como o planejamento inicial foi concebido. A gestão ágil oficial, dinâmica e visual das tarefas e ideias do projeto ocorre em nosso **[Board no Miro](https://miro.com/welcomeonboard/cWh0SW8wbmNMNEdGakYyUXJlV3owNCs1Lzk4aktHTVNlUVlaYVQxTk41bzB1Z3BEelV4WGptZmpQaVViTEZTRWIzZHhOV1l2Wk40dEpjWGhSSFNHbHlodXBEWmpTdVNCdDdoNFNuSEh1aEFLdjlzZFptUCttK2lDYUdnQVRFeFNyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=724497200461)**.
+> 📌 **Acompanhamento Visual e Dinâmico:** O detalhamento em imagem do Mapa de Empatia e do Kanban indica como o planejamento inicial foi concebido. A gestão ágil oficial, dinâmica e visual das tarefas e ideias do projeto ocorre em nosso **[Board no Miro](https://miro.com/welcomeonboard/cWh0SW8wbmNMNEdGakYyUXJlV3owNCs1Lzk4aktHTVNlUVlaYVQxTk41bzB1Z3BEelV4WGptZmpQaVViTEZTRWIzZHhOV1l2Wk40dEpjWGhSSFNHbHlodXBEWmpTdVNCdDdoNFNuSEh1aEFLdjlzZFptUCttK2lDYUdnQVRFeFNyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=724497200461)**.
 >
-> _As capturas de tela das dinâmicas realizadas no Miro encontram-se documentadas na pasta:_ `prints/`.
+> 💡 _Você pode clicar nas imagens abaixo para ser redirecionado(a) diretamente ao nosso board no Miro!_
+>
+> _(As capturas de tela originais encontram-se documentadas na pasta:_ `prints/`_)_
 
 ### Mapa de Empatia (Coordenação do SENAI)
 
-![Mapa de Empatia](./prints/MapaDeEmpatia.png)
+[![Mapa de Empatia](./prints/MapaDeEmpatia.png)](https://miro.com/welcomeonboard/cWh0SW8wbmNMNEdGakYyUXJlV3owNCs1Lzk4aktHTVNlUVlaYVQxTk41bzB1Z3BEelV4WGptZmpQaVViTEZTRWIzZHhOV1l2Wk40dEpjWGhSSFNHbHlodXBEWmpTdVNCdDdoNFNuSEh1aEFLdjlzZFptUCttK2lDYUdnQVRFeFNyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=724497200461)
 
 ---
 
 ### Quadro Kanban do Projeto
 
-![Quadro Kanban](./prints/Kanban.png)
+[![Quadro Kanban](./prints/Kanban.png)](https://miro.com/welcomeonboard/cWh0SW8wbmNMNEdGakYyUXJlV3owNCs1Lzk4aktHTVNlUVlaYVQxTk41bzB1Z3BEelV4WGptZmpQaVViTEZTRWIzZHhOV1l2Wk40dEpjWGhSSFNHbHlodXBEWmpTdVNCdDdoNFNuSEh1aEFLdjlzZFptUCttK2lDYUdnQVRFeFNyVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=724497200461)
 
 ---
 
-### Exemplo de Saída (`resultado.txt`)
+### 4. Exemplo de Saída (`resultado.txt`)
 
 O processamento das notas irá gerar um arquivo de saída semelhante a este:
 
