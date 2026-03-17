@@ -39,70 +39,38 @@ Abaixo estão os requisitos e regras de negócio mapeados a partir do _Briefing_
 
 ### Mapa de Empatia (Coordenação do SENAI)
 
-**1. Com quem estamos sendo EMPÁTICOS?**
-
-- A Coordenação do SENAI, que é responsável pela validação de notas, cálculo de médias e tomada de decisão sobre o desempenho acadêmico dos alunos.
-
-**2. O que ela precisa fazer?**
-
-- Processar o desempenho acadêmico da turma (entender o formato `[("Nome", [notas])]`).
-- Lidar com dados inconsistentes, nulos ou ausentes sem que o sistema "quebre".
-- Identificar rapidamente os alunos em recuperação (média < 7.0) e o "Top Student".
-- Gerar um relatório padronizado e limpo em texto (`resultado.txt`).
-
-**3. O que ela VÊ?**
-
-- Planilhas e informações chegando em múltiplos formatos ou com graves lacunas.
-- Dificuldade na identificação de alunos precisando de apoio e negligência com destaques.
-- Desorganização nos sistemas antigos, com códigos "espaguete", difíceis de dar manutenção.
-
-**4. O que ela FALA?**
-
-- "Preciso cobrar envios corretos, pois com dados nulos nosso fechamento trava."
-- "O processo de fechamento tem dependido de correções à mão, o que é inseguro."
-
-**5. O que ela FAZ?**
-
-- Perde horas calculando quem passou ou quem reprovou, gerando estresse e atrasos.
-- Corre atrás de correções pontuais, registro por registro.
-- Lida com retrabalho em fechamentos manuais de média.
-
-**6. O que ela ESCUTA?**
-
-- Professores sobrecarregados pela falta de automatização nos lançamentos.
-- Reclamações de alunos / responsáveis sobre inconsistências nas médias publicadas ou demoras no resultado.
-
-**7. O que ela PENSA e SENTE?**
-
-- Sente **frustração e insegurança** contínua com perdas de dados e retrabalhos. Teme que decisões erradas afetem o futuro do aluno.
-- **Dores:** Falta de clareza acadêmica; trabalho braçal muito cansativo; alto risco de falha manual.
-- **Desejos:** Necessita de uma solução automatizada, modularizada (`processamento.py` e `main.py`) e confiável que lide com exceções graciosamente. Deseja obter uma lista visual limpa das médias e de destaques/recuperação sem esforço adicional.
+![Mapa de Empatia](./prints/MapaDeEmpatia.png)
 
 ---
 
 ### Quadro Kanban do Projeto
 
-Abaixo está o fluxo de trabalho detalhado usando o método Kanban para guiar o desenvolvimento do projeto. Essa estrutura visa maximizar a previsibilidade e organização, sendo o modelo oficial a ser replicado no **Miro**.
-
-#### To Do (A Fazer - Pendências da Sprint)
-
-- **[Setup]** Configurar branch `feat/processamento` e inicializar o arquivo base `processamento.py`. `(🔴 Alta Prioridade)`
-- **[Core]** Implementar rotinas matemáticas: Cálculo de Média Aritmética e filtro de Recuperação (`média < 7`). `(🔴 Alta Prioridade)`
-- **[Core]** Desenvolver algoritmo de varredura para identificar o aluno de maior destaque (_Top Student_). `(🟡 Média Prioridade)`
-- **[Exportação]** Codificar a rotina de formatação e geração do relatório de saída `resultado.txt`. `(🔴 Alta Prioridade)`
-- **[Integração]** Construir arquivo `main.py`, declarar a lista de tuplas base `[("Nome", [notas])]` e invocar os módulos. `(🔴 Alta Prioridade)`
-- **[QA/Testes]** Executar bateria de testes manuais locais, validando comportamento contra dados corrompidos (strings ou `None`). `(🟡 Média Prioridade)`
-- **[DevOps]** Realizar commit estruturado e Merge Request final para a branch principal `main`. `(🟢 Baixa Prioridade - Final da Sprint)`
-
-#### Doing (Em Progresso)
-
-- **[Projeto/Gestão]** Modelagem da infraestrutura ágil no README e transição do quadro para a plataforma visual **Miro**. `(🔥 Em Execução)`
-
-#### Done (Concluído)
-
-- **[Produto]** Leitura e análise profunda do _briefing_, interpretando as necessidades do SENAI. `(✔️ Concluído)`
-- **[Requisitos]** Documentação e levantamento estruturado de RFs, RNFs e Regras de Negócio. `(✔️ Concluído)`
-- **[UX/Empatia]** Construção e preenchimento detalhado do Mapa de Empatia em 7 pilares (Perspectiva da Coordenação). `(✔️ Concluído)`
-- **[Setup]** Inicialização do repositório no GitHub, estruturação documental inicial do `README.md`. `(✔️ Concluído)`
+![Quadro Kanban](./prints/Kanban.png)
 
 ---
+
+### Exemplo de Saída (`resultado.txt`)
+
+O processamento das notas irá gerar um arquivo de saída semelhante a este:
+
+```text
+=== RELATÓRIO FINAL DE DESEMPENHO ACADÊMICO ===
+
+ALUNOS PROCESSADOS:
+Arthur: média 9.00
+Bruno: média 8.00
+Fábio: média 9.00
+Guilherme: média 9.00
+
+ALUNOS EM RECUPERAÇÃO:
+Nenhum aluno em recuperação.
+
+TOP STUDENT:
+Arthur: média 9.00
+
+ALUNOS COM INCONSISTÊNCIA DE DADOS:
+Felipe
+Pedro
+Renato
+André
+```
