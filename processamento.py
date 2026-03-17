@@ -34,3 +34,11 @@ def processar_alunos(alunos):
             alunos_inconsistentes.append(nome)
 
     return alunos_processados, alunos_inconsistentes
+  
+  
+  def filtrar_recuperacao(alunos_processados):
+    alunos_recuperacao = []
+    for aluno in alunos_processados:
+        if aluno['media'] < 7:
+            alunos_recuperacao.append(aluno)
+    return alunos_recuperacao
